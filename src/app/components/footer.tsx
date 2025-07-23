@@ -5,7 +5,7 @@ import { useEnv } from "../contexts/env";
 
 export function Footer() {
   return (
-    <footer className="footer container">
+    <footer className="footer container mt-3">
       <Copyright />
     </footer>
   )
