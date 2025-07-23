@@ -37,7 +37,7 @@ export function MDTextArea({ onChangeInput, inputValue, otherProps }) {
     const desktopToolbar = [
       ...defaultToolbar,
       { name: "image", action: EasyMDE.drawImage, text: "🌆", title: "Inserir imagem" },
-      { name: "table", action: EasyMDE.drawTable, text: "⏹️", title: "Inserir tabela" },
+      { name: "table", action: EasyMDE.drawTable, text: "⏹️", title: "Inserir tabela", className: "easymde-table-button" },
       "|",
       { name: "horizontal-rule", action: EasyMDE.drawHorizontalRule, text: "↔️", title: "Inserir linha horizontal" },
       { name: "side-by-side", action: EasyMDE.toggleSideBySide, text: "🔀", title: "Lado a lado" },

@@ -56,15 +56,15 @@ module.exports = async (phase) => {
 
   // Your current or future configuration 
 
-  // if (phase === PHASE_DEVELOPMENT_SERVER || phase === PHASE_PRODUCTION_BUILD) {
-  //   const withSerwist = (await import("@serwist/next")).default({
-  //     swSrc: 'src/app/service-worker/app-worker.ts', // where the service worker src is
-  //     swDest: 'public/sw.js', // where the service worker code will end up
-  //     reloadOnOnline: true,
-  //   });
+  if (phase === PHASE_DEVELOPMENT_SERVER || phase === PHASE_PRODUCTION_BUILD) {
+    const withSerwist = (await import("@serwist/next")).default({
+      swSrc: 'src/app/service-worker/app-worker.ts', // where the service worker src is
+      swDest: 'public/sw.js', // where the service worker code will end up
+      reloadOnOnline: true,
+    });
 
-  //   return withSerwist(nextConfig);
-  // }
+    return withSerwist(nextConfig as any);
+  }
 
   return nextConfig;
 };

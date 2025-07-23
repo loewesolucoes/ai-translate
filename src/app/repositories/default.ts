@@ -83,7 +83,7 @@ export class DefaultRepository {
   public async delete(tableName: TableNames, id: number) {
     let result = {} as any;
 
-    await this.db.exec(`delete from ${tableName} where id = $id`, { "$id": id })
+    result = await this.db.exec(`delete from ${tableName} where id = $id`, { "$id": id })
 
     await this.persistDb();
 

@@ -74,11 +74,11 @@ function AiSection() {
           <h3 className="card-title">Use ai to translate things</h3>
           <div className="mb-3 d-flex gap-3 flex-column flex-xl-row">
             <input type="radio" className="btn-check" name="ai-help-type" id="isThisSentenceRight" checked={activeHelpType === AiHelpType.IsThisSentenceRight} onChange={() => setIsHelpType(AiHelpType.IsThisSentenceRight)} />
-            <label className="btn btn-outline-info" htmlFor="isThisSentenceRight">Is this sentence right?</label>
+            <label className="btn btn-outline-success" htmlFor="isThisSentenceRight">Is this sentence right?</label>
             <input type="radio" className="btn-check" name="ai-help-type" id="howCanISay" checked={activeHelpType === AiHelpType.HowCanISay} onChange={() => setIsHelpType(AiHelpType.HowCanISay)} />
-            <label className="btn btn-outline-info" htmlFor="howCanISay">How can I say?</label>
+            <label className="btn btn-outline-success" htmlFor="howCanISay">How can I say?</label>
             <input type="radio" className="btn-check" name="ai-help-type" id="translate" checked={activeHelpType === AiHelpType.Translate} onChange={() => setIsHelpType(AiHelpType.Translate)} />
-            <label className="btn btn-outline-info" htmlFor="translate">Translate to pt-br</label>
+            <label className="btn btn-outline-success" htmlFor="translate">Translate to pt-br</label>
           </div>
           <div className="mb-3">
             <label htmlFor="textToTranslate" className="form-label">Text to translate</label>

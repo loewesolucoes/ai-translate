@@ -127,7 +127,7 @@ export function AuthProvider(props: any) {
   }
 
   function goToAuth() {
-    var googleAuthUrl = new URL(GOOGLE_AUTH_BASE_URL)
+    const googleAuthUrl = new URL(GOOGLE_AUTH_BASE_URL)
 
     googleAuthUrl.searchParams.set('client_id', CLIENT_ID);
     googleAuthUrl.searchParams.set('redirect_uri', redirectUrl);
